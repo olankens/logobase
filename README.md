@@ -1,15 +1,9 @@
 <table>
   <tr>
-    <td align="left" width="6666">
-    <div id="toc">
-      <ul style="list-style: none">
-      <summary>
-        <h1>LOGOBASE</h1>
-      </summary>
-      </ul>
-    </div>
+    <td align="left" width="9999">
+      <h3>TEST</h3>
     </td>
-    <td align="center" width="3333">
+    <td align="center" width="2222">
       <img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/>
     </td>
   </tr>
