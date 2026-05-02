@@ -1,7 +1,13 @@
 <table>
   <tr>
     <td align="left" width="6666">
-      <h1>LOGOBASE</h1>
+    <div id="toc">
+      <ul style="list-style: none">
+      <summary>
+        <h1>LOGOBASE</h1>
+      </summary>
+      </ul>
+    </div>
     </td>
     <td align="center" width="3333">
       <img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/>
