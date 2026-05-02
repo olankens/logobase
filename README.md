@@ -1,9 +1,9 @@
 <table>
   <tr>
-    <td align="center" width="9999">
+    <td align="left" width="6666">
       <h1>LOGOBASE</h1>
     </td>
-    <td align="center">
+    <td align="center" width="3333">
       <img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/>
     </td>
   </tr>
