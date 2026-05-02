@@ -1,0 +1,39 @@
+name: Update README
+on:
+  push:
+    paths:
+      - "logos/**"
+      - ".github/workflows/update-readme.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-readme
+  cancel-in-progress: true
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo "<table>" > table.md
+          c=0
+          echo "  <tbody><tr>" >> table.md
+          for i in $(ls logos/*-light.png | sort); do
+            base=$(basename "$i" -light.png)
+            light="logos/${base}-light.png"
+            dark="logos/${base}-dark.png"
+            [ $c -eq 5 ] && echo "  </tr></tbody>" >> table.md && echo "  <tbody><tr>" >> table.md && c=0
+            echo "    <td align=\"center\" width=\"9999\"><p><a href=\"$light\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"$dark\"><img src=\"$light\" align=\"center\" width=\"64\"/></picture></a></p></td>" >> table.md
+            c=$((c+1))
+          done
+          echo "  </tr></tbody>" >> table.md
+          echo "</table>" >> table.md
+          awk 'BEGIN{p=1}/<!-- START_TABLE -->/{print;system("cat table.md");p=0;next}/<!-- CEASE_TABLE -->/{p=1}p' README.md > README.tmp && mv README.tmp README.md
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: Update the logo collection" || true
+          git push
