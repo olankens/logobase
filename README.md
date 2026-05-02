@@ -1,13 +1,12 @@
-<div align="center">
-  <p><img src=".github/assets/icon.svg" align="center" width="128"/></p>
-  <h1>LOGOBASE</h1>
-</div>
+<hr>
 
-<table><tr><td align="center" width="9999">
-  &nbsp;<p>Technology logo pack intended for very seamless integration into README.md files or visual assets such as LinkedIn banners, provided in both dark and light variants for optimal flexibility and consistency.</p>&nbsp;
-</td></tr></table>
+# OVERVIEW
 
-### Logo Collection
+![](PICTURE.jpg)
+
+Technology logo pack intended for very seamless integration into README.md files or visual assets such as LinkedIn banners, provided in both dark and light variants for optimal flexibility and consistency.
+
+## Logo Collection
 
 <!-- START_TABLE -->
 <table>
@@ -54,9 +53,13 @@
 </table>
 <!-- CEASE_TABLE -->
 
-### Create Markdown Banner
+<hr>
 
-#### 1. Banner Preview
+# GUIDANCE
+
+## Create Markdown Banner
+
+### 1. Banner Preview
 
 <table><tr><td align="center" height="72" width="9999">
   <picture><source media="(prefers-color-scheme: dark)" srcset="logos/horizontal-dark.png"><img src="logos/horizontal-light.png" align="center" width="48"/></picture>
@@ -66,7 +69,7 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="logos/horizontal-dark.png"><img src="logos/horizontal-light.png" align="center" width="48"/></picture>
 </td></tr></table>
 
-#### 2. Gather the Logos
+### 2. Gather the Logos
 
 ```shell
 deposit="images" && mkdir -p "$deposit"
@@ -76,7 +79,7 @@ for f in {circle,horizontal,square,vertical}-{dark,light}; do
 done
 ```
 
-#### 3. Create the Banner
+### 3. Create the Banner
 
 ```md
 <table><tr><td align="center" height="72" width="9999">
@@ -87,3 +90,5 @@ done
   <picture><source media="(prefers-color-scheme: dark)" srcset="images/horizontal-dark.png"><img src="images/horizontal-light.png" align="center" width="48"/></picture>
 </td></tr></table>
 ```
+
+<hr>
