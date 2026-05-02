@@ -1,38 +1,13 @@
-<table>
-  <tr>
-    <td align="left" width="9999">
-      <h3>TEST</h3>
-    </td>
-    <td align="center" width="2222">
-      <img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <p><img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/></p>
+  <h1>LOGOBASE</h1>
+</div>
 
-Technology logo pack intended for very seamless integration into README.md files or visual assets such as LinkedIn banners, provided in both dark and light variants for optimal flexibility and consistency.
-
-
-[//]: # (<div align="center">)
-
-[//]: # (  <p><img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/></p>)
-
-[//]: # (  <h1>LOGOBASE</h1>)
-
-[//]: # (</div>)
-
-[//]: # (<table><tr><td align="center" width="9999">)
-
-[//]: # (  &nbsp;<p><img src="https://github.com/olankens/logobase/raw/HEAD/.github/assets/icon.svg" align="center" width="128"/></p>)
-
-[//]: # (  <h1>LOGOBASE</h1>)
-
-[//]: # (  &nbsp;<p>)
-
-[//]: # (    Technology logo pack intended for very seamless integration into README.md files or visual assets such as LinkedIn banners, provided in both dark and light variants for optimal flexibility and consistency.)
-
-[//]: # (  </p>&nbsp;)
-
-[//]: # (</td></tr></table>)
+<table><tr><td align="center" width="9999">
+  &nbsp;<p>
+    Technology logo pack intended for very seamless integration into README.md files or visual assets such as LinkedIn banners, provided in both dark and light variants for optimal flexibility and consistency.
+  </p>&nbsp;
+</td></tr></table>
 
 ### Logo Collection
 
